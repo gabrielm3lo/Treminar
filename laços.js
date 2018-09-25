@@ -18,16 +18,32 @@
 // }
 
 
-let Numero = 17 ;
-let Palpite = prompt ("Digite um número de 1 a 50");
+// let Numero = 17 ;
+// let Palpite = prompt ("Digite um número de 1 a 50");
 
-while(Palpite == Numero){
-if(Palpite > Numero){
-    console.log( "Não deu match ");
-    }
-    else{(Palpite < Numero);
-    console.log ("Não deu match AZARADO");
-    }
-}
+// while(Palpite !== Numero){
+// if(Palpite > Numero){
+//     console.log( "Não deu match ");
+//     }
+//     else{(Palpite < Numero);
+//     console.log ("Não deu match AZARADO");
+//     }
+// }
 //     else if(Palpite == numero );
 
+let number = Math.floor(Math.random()* 50 + 1);
+let chute = prompt("Adivinhe o número coração");
+
+while(chute != number){
+
+    if(chute > number){
+        console.log ("Um numero menor");
+    }
+    if(chute < number ){
+        console.log ("Um numero maior");
+    }
+    else{
+    console.log ("Você acertou");
+    }
+}
+alert("acertoh")
